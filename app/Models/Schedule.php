@@ -26,8 +26,7 @@ class Schedule extends Model
         //удаляем праздники
         $result = $this->isHoliday($result);
         //получаем итоговый json-ответ
-        $result = $this->makeJson($result, $id);
-        dd($result);
+        print_r($result = $this->makeJson($result, $id));
 
 
     }
